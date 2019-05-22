@@ -1,6 +1,5 @@
 class CompanyMessagesController < ApplicationController
   def index
-    Rails.logger.info(params.class)
     CompanyMessagesReceiveJob
         .perform_now(params)
         .yield_self { |p| CompanyMessageOperationJob.perform_now(p) }
