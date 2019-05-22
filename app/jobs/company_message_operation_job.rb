@@ -11,7 +11,7 @@ class CompanyMessageOperationJob < ApplicationJob
 
   protected
 
-  # @return [CompanyMessageOperationJob]
+  # @return [Array<Any>]
   def operate
     CompanyMessageChatRoom.first.messages
   end
