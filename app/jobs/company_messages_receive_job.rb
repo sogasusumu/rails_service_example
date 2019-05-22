@@ -9,7 +9,7 @@ class CompanyMessagesReceiveJob < ApplicationJob
     operate
   end
 
-  # @return [CompanyMessageOperationJob]
+  # @return [CompanyMessagesOperationJob]
   def operate
     tap { arg.permit! }
   end

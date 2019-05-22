@@ -1,4 +1,4 @@
-class CompanyMessageOperationJob < ApplicationJob
+class CompanyMessagesOperationJob < ApplicationJob
   queue_as :default
 
   # @param arg [CompanyMessagesReceiveJob]

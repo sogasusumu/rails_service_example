@@ -1,4 +1,4 @@
-class CompanyMessageSerializeJob < ApplicationJob
+class CompanyMessagesSerializeJob < ApplicationJob
   queue_as :default
 
   # @param arg [Array<Any>]
