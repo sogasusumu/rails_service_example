@@ -1,5 +1,4 @@
 class ApplicationJob < ActiveJob::Base
-
   protected
 
   attr_accessor :arg_type, :arg
