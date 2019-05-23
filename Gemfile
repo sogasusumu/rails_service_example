@@ -53,3 +53,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # https://github.com/interagent/committee
 gem 'committee'
+
+# https://github.com/egonSchiele/contracts.ruby
+gem 'contracts'
