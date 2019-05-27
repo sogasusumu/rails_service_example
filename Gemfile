@@ -35,6 +35,7 @@ group :development, :test do
   gem 'bullet'
   gem 'factory_bot_rails'
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rspec', require: false
@@ -51,8 +52,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# https://github.com/interagent/committee
-gem 'committee'
-
 # https://github.com/egonSchiele/contracts.ruby
 gem 'contracts'
+
+# https://github.com/Apipie/apipie-rails
+gem 'apipie-rails'
