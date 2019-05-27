@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ChatRoomsController < ApplicationController
   def_param_group :chat_room do
     property :id, Integer, require: true, desc: 'chat_room_id'

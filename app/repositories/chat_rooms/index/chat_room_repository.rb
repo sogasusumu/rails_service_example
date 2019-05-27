@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ChatRooms::Index::ChatRoomRepository
   include Contracts::Core
   include Contracts::Builtin
@@ -5,17 +7,17 @@ module ChatRooms::Index::ChatRoomRepository
   Contract nil => Hash
   def build_response
     {
-        id: id,
-        company_id: company_id,
-        company_name: company_name,
-        company_messages_count: selected_client_messages.size,
-        user_id: user_id,
-        user_name: user_name,
-        user_messages_counts: selected_user_messages.size,
-        first_message_sender: messages.first.sender,
-        first_message_created_at: messages.first.created_at,
-        last_message_sender: messages.last.sender,
-        last_message_created_at: messages.last.created_at
+      id: id,
+      company_id: company_id,
+      company_name: company_name,
+      company_messages_count: selected_client_messages.size,
+      user_id: user_id,
+      user_name: user_name,
+      user_messages_counts: selected_user_messages.size,
+      first_message_sender: messages.first.sender,
+      first_message_created_at: messages.first.created_at,
+      last_message_sender: messages.last.sender,
+      last_message_created_at: messages.last.created_at
     }
   end
 
