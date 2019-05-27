@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ChatRooms::Index::CompanyRepository
   include Contracts::Core
   include Contracts::Builtin

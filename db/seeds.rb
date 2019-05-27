@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -7,15 +9,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 user_attributes = [
-    { first_name: 'user', last_name: 'one' },
-    { first_name: 'user', last_name: 'two' }
+  { first_name: 'user', last_name: 'one' },
+  { first_name: 'user', last_name: 'two' }
 ]
 
 users = user_attributes.map { |attr| User.create(attr) }
 
 company_attributes = [
-    { name: 'company_one' },
-    { name: 'company_two' }
+  { name: 'company_one' },
+  { name: 'company_two' }
 ]
 
 company_attributes.each do |company_attribute|
