@@ -6,7 +6,5 @@ linter:
 	rails_best_practices .
 
 pre_commit:
-	generate_openapi
-
-generate_openapi:
-	swagger-codegen generate -i docments/openapi.yml -o docments/openapi -l openapi
+	security_checker
+	linter
